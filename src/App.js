@@ -46,6 +46,7 @@ class App extends React.Component {
 		<div className="App showborder">
 			<div className = "header">
 				<h1>My Todo</h1>
+				<span>Today is {new Date().toDateString()}</span>
 			</div>
 			<div className = "Body showborder">
 				<Container title = {KEYS[0]} items = {this.state.mem[KEYS[0]]} />
